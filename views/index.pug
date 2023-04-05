@@ -3,4 +3,19 @@ extends layout
 block content
   h1= title
   p Welcome to INDIA #{title}
-  button(type="button" class="btn btn-secondary") Left
+  button(class="btn btn-primary" onClick='doReduce()')#name Press Me
+  div(id="reduce") Reduce the value
+  //#reduce Reduce the value
+  script. 
+        var count =20;
+        var change =-1;
+        function doReduce(){
+          var res=count+change;
+          res=res-1;
+          document.getElementById("reduce").innerHTML =res;
+          
+        }
+
+  
+
+       
