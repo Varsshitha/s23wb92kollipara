@@ -2,7 +2,50 @@ extends layout
 
 block content
   h1= title
+   
+
+   
   
+  -var results=[];
+  -var Bull={};
+  -Bull.Breed="Abergele";
+  -Dog.Dimension="Small";
+  -Dog.value=60;
+  -results.push(Bull);
+  -var Bull1={};
+  -Bull1.Breed="Sibi Bhagnari";
+  -Bull1.Dimension="Medium";
+  -Bull1.value=75;
+  -results.push(Bull1);
+  -var Bull2={};
+  -Bull2.Breed="Gir";
+  -Bull2.Dimension="Large";
+  -Bull2.value=100;
+  -results.push(Bull2);
   
+
+   div(class='container-fluid')
+    div(class='row')
+     div(class='Bull1') Bull one Details
+       p Breed #{results[0].Breed}
+       p Size #{results[0].Dimension}
+       p Price #{results[0].value}
+
+     div(class='Bull1') Bull Two Details
+       p Breed #{results[1].Breed}
+       p Size #{results[1].Dimension}
+       p Price #{results[1].value}
+       
+     div(class='Bull1') Bull Two Details
+       p Breed #{results[1].Breed}
+       p Size #{results[1].Dimension}
+       p Price #{results[1].value}  
+     
+
+
+   //-var list = results
+    //each item in list
+    //div(class='col-sm-2') #{item}
+    
 
        
